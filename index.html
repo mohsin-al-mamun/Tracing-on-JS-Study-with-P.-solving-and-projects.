@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="inputDiv">
+           <h3> Vanilla JS</h3>
+           <div id="inputsec">
+               <p>Date : </p><input class= "input" type="date" id="date" >
+               <p>CSS & JS: </p><input class= "input" type="number" id="cssOrJs" placeholder="Time in hours">
+               <p>Problem Solving: </p><input class= "input" type="number" id="pSolving" placeholder="Time in hours">
+               <p>Projects: </p><input class= "input" type="number" id="project" placeholder="Time in hours">
+               
+              <br> <button id="submit">Submit</button> <br>  
+           </div>
+        </div>
+
+
+        <div id="outputdiv">
+            <table id="table">
+                <caption id="caption"> Vanilla JS</caption>
+                <thead>
+                    <tr>
+                    <th> Dates</th>
+                    <th>CSS / JS</th>
+                    <th>P. Solving</th>
+                    <th>Projects</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- values will come here from JS file -->
+                </tbody>
+                <tfoot></tfoot>
+
+            </table>
+
+
+            <div id="graphdiv">
+                <button id="dailybar"> Daily Graph </button>
+                <button id="overallbar">Overall Graph </button>
+            </div>
+            
+            <div id="bar1Text"> Today's Date</div>
+            <div id="bardiv1">
+             
+              <ul class="numbers">
+               <li><span>10 hr</span> </li>
+               <li><span>5 hr</span></li>
+               <li><span>0 hr</span></li>
+              </ul>
+
+              <ul class="bars">
+                <li><div class="bar" data-percentage='50' id="bar1" style="background: red;"> <span>CSS / JS </span></div></li>
+                <li><div class="bar" data-percentage='50' id="bar2" style="background: yellow;"> <span>P. solving </span></div></li>
+                <li><div class="bar" data-percentage='50' id="bar3" style="background: rgb(245, 10, 194);"> <span>Projects</span></div></li>
+            </ul>
+
+            </div>
+            
+            <div id="bar2Text"> <span> <span id="startDate" style="color: greenyellow;">Start date</span> &nbsp --- &nbsp </span>  <span id="endDate" style="color: red;"> &nbsp End date</span></div>
+           
+            <div id="bardiv2">
+                <ul class="numbers2">
+                    <li><span>100 %</span> </li>
+                    <li><span>50 %</span></li>
+                    <li><span>0 %</span></li>
+                </ul>
+
+                <ul class="bars2">
+                    <li><div class="bar" data-percentage='50' id="obar1" style="background: red;"> <span>CSS / JS </span></div></li>
+                    <li><div class="bar" data-percentage='50' id="obar2" style="background: yellow;"> <span>P. solving </span></div></li>
+                    <li><div class="bar" data-percentage='50' id="obar3" style="background: rgb(245, 10, 194);"> <span>Projects</span></div></li>
+                </ul>
+
+            </div>
+
+            
+
+            <div id="clearDiv">
+                <button id="clearbtn"> Clear all </button>
+            </div>
+        </div>
+
+       
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

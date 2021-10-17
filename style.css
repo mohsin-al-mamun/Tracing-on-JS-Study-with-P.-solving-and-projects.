@@ -1,0 +1,428 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color:rgb(31, 25, 37);
+
+}
+
+
+
+#inputDiv{
+    width: 100%;
+    min-height: 30vh;
+    background-color: rgb(31, 25, 37);
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+   
+    
+   
+}
+    #inputDiv h3{
+        margin-bottom: 10px;
+        margin-top: 0px;
+        padding-top: 25px;
+        text-align: center;
+        color:white;
+        background-color: red;
+        height: 40px;
+        /* border-radius: 5px; */
+    }
+
+    #inputsec p {
+    margin: 0;
+    margin-left: 50px;
+    color: rgb(243, 243, 243);
+    }
+
+    #inputsec{
+        width: 300px;
+        min-height:30vh ;
+        /* background-color: tomato; */
+        margin-left: 0;
+        margin-right: 0;
+        margin: auto;
+    }
+
+        .input{ 
+            width: 200px;
+            height: 30px;
+            margin-bottom: 5px;
+            text-align: center;
+            margin-left: 50px;
+            font-size: 15px;
+
+        } 
+
+        #submit{
+        background-color: rgba(26, 179, 12, 0.805);
+        width: 150px;
+        height: 35px;
+        margin-left: 80px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border: none;
+        offset: none;
+        color: white;
+        font-size: 17px;
+        }
+
+
+
+#outputdiv{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(31, 25, 37);
+}
+
+    #table{
+    
+        text-align: center;
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+        margin: auto;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        
+        color: white;
+        border: 1px solid white;
+        border-collapse: collapse; 
+        visibility: hidden;
+        margin-bottom: 30px;
+    }
+
+        #table caption{
+            margin: 5px;
+        }
+        #table thead{
+            background-color: red;
+            height: 35px;
+
+        }
+        #table tbody th{
+            background-color: rgb(17, 0, 255);
+            height: 30px;
+        }
+
+        #table tbody tr:hover{
+            background-color: rgba(26, 179, 12, 0.805);
+        }
+
+
+        #table th, #table td {
+            border: 1px solid white;
+
+           
+        }
+    #graphdiv{
+        width:  80%;
+        margin-left: 0;
+        margin-right: 0;
+        margin: auto;
+        text-align: center;
+    }
+        #dailybar, #overallbar{
+            background-color: rgb(154, 13, 209);
+            width: 150px;
+            height: 30px;
+            border: none;
+            offset: none;
+            color: white;
+            font-size: 17px;
+            margin-left: 50px;
+            /* margin-top: 50px; */
+            margin-bottom: 15px;
+        }
+
+#clearDiv{
+    width:  50%;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    text-align: center;
+    /* background-color: aqua; */
+    
+}  
+    #clearbtn{
+        background-color: rgb(154, 13, 209);
+        width: 85px;
+        height: 25px;
+        border: none;
+        offset: none;
+        color: white;
+        font-size: 17px;
+        /* margin-left: 200px; */
+        margin-top: 100px;
+        margin-bottom: 5px;
+        visibility: hidden;
+    
+    } 
+    
+    #bar1Text{
+        width: 50%;
+        color: red;
+        margin-left:0 ;
+        margin-right: 0;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 14px;
+        display: none;
+        /* visibility: hidden; */
+    }
+
+    #bardiv1{
+        width: 50%;
+        height: 300px;
+        margin-top: 50px;
+        margin-left:0 ;
+        margin-right: 0;
+        margin: auto;
+        display: none;
+        
+    } 
+
+        .numbers{
+            color: white;
+            margin-top: 0px;
+            padding: 0;
+            width: 10%;
+            height: 100%;
+            display: inline-block;
+            float: left;
+        }
+        .numbers li{
+            list-style: none;
+            height: 150px;
+            position: relative;
+            bottom: 145px;
+        }
+
+        .numbers span{
+            font-size: 12px;
+            font-weight: 600;
+            position: absolute;
+            bottom: 0px;
+            right: 5px;
+        }
+
+        .bars{
+            color:white;
+            font-size: 12px;
+            font-weight: 600;
+            background:rgb(43, 34, 51);
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            width: 85%;
+            height:300px ;
+        }
+        .bars li{
+            display: table-cell;
+            width: 100px;
+            height: 300px;
+            position: relative;
+        }
+        .bars span{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: -30px;
+        }
+
+        .bars .bar{
+            display: block;
+            width: 50px;
+            /* height: 0%; */
+            position: absolute;
+            bottom: 0;
+            margin-left: 200px;
+        }
+
+    #bar2Text{
+        width: 50%;
+        color: white;
+        margin-left:0 ;
+        margin-right: 0;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+        display: none;
+        
+        /* justify-content: center; */
+        /* visibility: hidden; */
+        
+    }
+    
+    #bardiv2{
+        width: 50%;
+        height: 300px;
+        background-color:rgb(31, 25, 37);
+        display: none;
+        margin-left:0 ;
+        margin-right: 0;
+        margin: auto;
+        margin-top: 0px;
+    }
+
+        #bar2Text span{
+            font-size: 14px;
+        }
+        .numbers2{
+            color: white; 
+            margin-top: 0px;
+            padding: 0;
+            width: 10%;
+            height: 100%;
+            display: inline-block;
+            float: left;
+        }
+
+        .numbers2 li{
+            list-style: none;
+            height: 150px;
+            position: relative;
+            bottom: 10px;
+            bottom: 145px;
+            
+        }
+        
+        .numbers2 span{
+            font-size: 12px;
+            font-weight: 600;
+            position: absolute;
+            bottom: 0;
+            right: 0px;
+        }
+       
+
+        .bars2{
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            background:rgb(43, 34, 51);
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            width: 85%;
+            height: 300px;
+        }
+
+        .bars2 li{
+            display: table-cell;
+            width: 100px;
+            height: 300px;
+            position: relative;
+        }
+
+        
+        .bars2 span{
+          width: 100%;
+          text-align: center;
+          position: absolute;
+          bottom: -30px;
+          left: -0px;
+        }
+
+        .bars2 .bar{
+            display: block;
+            width: 50px;
+            height: 0%;
+            position: absolute;
+            bottom: 0;
+            margin-left: 200px; 
+        }
+
+
+        .bars2 .bar:before{
+            color: white;
+            content:attr(data-percentage) '%';
+            position: relative;
+            left:10px;
+            bottom: 15px;
+        }
+
+
+
+
+
+
+
+
+
+
+       
+
+@media  (max-width : 1200px){
+    
+    .bars .bar{
+        margin-left: 100px;
+    }
+    .bars2 .bar{
+        margin-left: 100px;
+    }
+}
+
+@media  (max-width : 768px){
+    
+    .bars .bar{
+        margin-left: 60px;
+    }
+    .bars2 .bar{
+        margin-left: 60px;
+    }
+    #bardiv1{
+        width: 80%;
+    }
+    #bardiv2{
+        width: 80%;
+    }
+}
+
+@media  (max-width : 900px){
+    
+    .bars .bar{
+        margin-left: 60px;
+    }
+    .bars2 .bar{
+        margin-left: 60px;
+    }
+}
+
+
+@media  (max-width : 480px) {
+    
+    #table{
+        width: 98%;
+      
+    }
+    #clearDiv{
+        width: 98%; 
+    }
+
+    #bardiv1{
+        width: 98%;
+    }
+    #bardiv2{
+        width: 98%;
+    }
+    #bar2Text span{
+        font-size: 13px;
+    }
+
+
+    .bars .bar{
+        margin-left: 30px;
+    }
+    .bars2 .bar{
+        margin-left: 30px;
+    }
+    #graphdiv{
+        width:  98%;
+    }
+    #dailybar, #overallbar{
+        margin-left: 10px; 
+    }
+}
